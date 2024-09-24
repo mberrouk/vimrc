@@ -1,0 +1,41 @@
+call plug#begin('~/.vim/plugged')
+
+" Fugitive Vim Github Wrapper
+"" https://github.com/tpope/vim-fugitive
+Plug 'tpope/vim-fugitive'
+""""""""""""""""""""""""""""""""""""""""
+
+"" Gruvbox theme
+Plug 'morhetz/gruvbox'
+""""""""""""""""""""""""""""""""""""""""
+
+"" NerdTree
+Plug 'preservim/nerdtree'
+""""""""""""""""""""""""""""""""""""""""
+
+"" Nice statusline at the bottom 
+Plug 'vim-airline/vim-airline'
+""""""""""""""""""""""""""""""""""""""""
+
+"" Language packs that allow Vim to correctly highlight syntax
+Plug 'sheerun/vim-polyglot'
+""""""""""""""""""""""""""""""""""""""""
+
+"" Greatly improves HTML & CSS workflow
+"" docs: https://docs.emmet.io/abbreviations/syntax/
+Plug 'mattn/emmet-vim'
+""""""""""""""""""""""""""""""""""""""""
+
+"" Comment stuff out
+Plug 'tpope/vim-commentary'
+""""""""""""""""""""""""""""""""""""""""
+
+"" surroundings: parentheses, brackets, quotes, XML tags ...
+Plug 'tpope/vim-surround'
+""""""""""""""""""""""""""""""""""""""""
+
+"" autocompletion tool
+"" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+""""""""""""""""""""""""""""""""""""""""
+
+call plug#end()
