@@ -62,16 +62,21 @@ if filereadable(expand("~/.vimrc.plug"))
     source ~/.vimrc.plug
 endif
 
-"" Colorsheme
-colorscheme gruvbox
 
 set termguicolors
 let g:gruvbox_italic=1
 set background=dark
-hi Normal guibg=NONE ctermbg=NONE
-let g:terminal_ansi_colors = [
-    \ '#282828', '#cc241d', '#98971a', '#d79921',
-    \ '#458588', '#b16286', '#689d6a', '#a89984',
-    \ '#928374', '#fb4934', '#b8bb26', '#fabd2f',
-    \ '#83a598', '#d3869b', '#8ec07c', '#ebdbb2',
-\]
+"" hi Normal guibg=NONE ctermbg=NONE
+
+"" handling Highlight for spelling 
+let g:gruvbox_guisp_fallback='bg'
+
+"" Colorsheme
+colorscheme gruvbox
+
+" let g:terminal_ansi_colors = [
+"     \ '#282828', '#cc241d', '#98971a', '#d79921',
+"     \ '#458588', '#b16286', '#689d6a', '#a89984',
+"     \ '#928374', '#fb4934', '#b8bb26', '#fabd2f',
+"     \ '#83a598', '#d3869b', '#8ec07c', '#ebdbb2',
+" \]
